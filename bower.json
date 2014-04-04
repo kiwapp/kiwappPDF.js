@@ -1,0 +1,26 @@
+{
+  "name": "kiwappPDF.js",
+  "main": "./kiwappPDF.js",
+  "version": "1.0.0",
+  "homepage": "kiwapp.github.io/kiwappPDF.js",
+  "authors": [
+    "Adrien Carta adrien@procheo.fr"
+  ],
+  "description": "Enhance your app with native PDF reader on Android and iOS devices.",
+  "keywords": [
+    "Kiwapp"
+  ],
+  "license": "GPL v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulpfile.js",
+    "bower.json",
+    "package.json",
+    "README.md",
+    "javascripts"
+  ]
+}
