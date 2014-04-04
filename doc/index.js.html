@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>index.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="doc-style.css" />
+  <script src="doc-filelist.js"></script>
+  <script>
+    var relativeDir = "", thisFile = "Users/adriencarta/KiwappLib/doc/kiwappPDF/src/index.js", defaultSidebar = true;
+  </script>
+  <script src="doc-script.js"></script>
+  <script src="fileSearch.js"></script>
+  <script src="goToLine.js"></script>
+  <link rel="stylesheet" href="fileSearch.css" />
+  <link rel="stylesheet" href="goToLine.css" />
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+      <div class="heading h1">
+        <a href="#how%20to%20use%20kiwapppdf.js">How To Use kiwappPDF.js</a>
+      </div>
+      <div class="heading h2">
+        <a href="#initialize%20reader">Initialize Reader</a>
+      </div>
+      <div class="heading h2">
+        <a href="#reader%20methods">Reader Methods</a>
+      </div>
+      <div class="heading h3">
+        <a href="#read%20a%20document">Read a document</a>
+      </div>
+      <div class="heading h3">
+        <a href="#close%20a%20document%20(this%20part%20only%20concerns%20ios)">Close a document (this part only concerns iOS)</a>
+      </div>
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container"><div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+      <tr>
+        <td class="docs">
+<div class="pilwrap" id="how%20to%20use%20kiwapppdf.js">
+  <h1>
+    <a href="#how%20to%20use%20kiwapppdf.js" name="how%20to%20use%20kiwapppdf.js" class="pilcrow">&#182;</a>
+    How To Use kiwappPDF.js
+  </h1>
+</div>
+
+
+<p>kiwappPDF.js is a kiwapp.js based labrary which provides you simple methods to
+read pdf using native on Android and iOS.</p>
+
+<p>It can not work without Kiwapp.js loaded in your application.
+You have to initialize kiwapp before using the kiwappPDF methods.</p>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre></pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs"><div class="dox">
+  <div class="summary">
+<div class="pilwrap" id="initialize%20reader">
+  <h2>
+    <a href="#initialize%20reader" name="initialize%20reader" class="pilcrow">&#182;</a>
+    Initialize Reader
+  </h2>
+</div>
+
+
+<p>Once Kiwapp is initialized, you can create a Reader bridge.</p>
+  </div>
+  <div class="body">
+  </div>
+</div>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+
+<span class="kd">var</span> <span class="nx">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">KWReader</span><span class="p">();</span>
+
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs"><div class="dox">
+  <div class="summary">
+<div class="pilwrap" id="reader%20methods">
+  <h2>
+    <a href="#reader%20methods" name="reader%20methods" class="pilcrow">&#182;</a>
+    Reader Methods
+  </h2>
+</div>
+
+
+<p>All the Reader methods are bridges calling native.</p>
+  </div>
+  <div class="body">
+  </div>
+</div>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs"><div class="dox">
+  <div class="summary">
+<div class="pilwrap" id="read%20a%20document">
+  <h3>
+    <a href="#read%20a%20document" name="read%20a%20document" class="pilcrow">&#182;</a>
+    Read a document
+  </h3>
+</div>
+
+
+<p>Once your Reader is ready, you can read documents.  </p>
+  </div>
+  <div class="body">
+  </div>
+</div>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs">
+<div class="pilwrap">
+  <a class="pilcrow" href="#section-5" id="section-5">&#182;</a>
+</div>
+<p>The method "open" of your Reader takes one argument. <br />
+This is the reader config :  </p>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs">
+<div class="pilwrap">
+  <a class="pilcrow" href="#section-6" id="section-6">&#182;</a>
+</div>
+<p>Creating the configuration.
+Here the Reader will mask all the webview surface.</p>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+<span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">origin_x</span> <span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nx">origin_y</span> <span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nx">width</span>    <span class="o">:</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">,</span>
+    <span class="nx">height</span>   <span class="o">:</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">,</span>
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs">
+<div class="pilwrap">
+  <a class="pilcrow" href="#section-7" id="section-7">&#182;</a>
+</div>
+<p>If true there is no navigation bar  </p>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+    <span class="nx">navigation_bar_is_hidden</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs">
+<div class="pilwrap">
+  <a class="pilcrow" href="#section-8" id="section-8">&#182;</a>
+</div>
+<p>If true an animation will open the file  </p>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+    <span class="nx">modal_launch_with_animation</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs">
+<div class="pilwrap">
+  <a class="pilcrow" href="#section-9" id="section-9">&#182;</a>
+</div>
+<p>If true the document can't be sent by e-mail  </p>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+    <span class="nx">private_document</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs">
+<div class="pilwrap">
+  <a class="pilcrow" href="#section-10" id="section-10">&#182;</a>
+</div>
+<p>The relative path to your document</p>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+    <span class="nx">file_path</span> <span class="o">:</span> <span class="s2">&quot;../pdf/test.pdf&quot;</span>
+<span class="p">};</span>
+
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs">
+<div class="pilwrap">
+  <a class="pilcrow" href="#section-11" id="section-11">&#182;</a>
+</div>
+<p>Reading the document :</p>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+<span class="nx">reader</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+
+
+</pre></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="docs"><div class="dox">
+  <div class="summary">
+<div class="pilwrap" id="close%20a%20document%20(this%20part%20only%20concerns%20ios)">
+  <h3>
+    <a href="#close%20a%20document%20(this%20part%20only%20concerns%20ios)" name="close%20a%20document%20(this%20part%20only%20concerns%20ios)" class="pilcrow">&#182;</a>
+    Close a document (this part only concerns iOS)
+  </h3>
+</div>
+
+  </div>
+  <div class="body">
+  </div>
+</div>
+        </td>
+        <td class="code highlight"><div class="highlight"><pre>
+<span class="nx">reader</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</pre></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+  </div>
+</body>
+</html>
